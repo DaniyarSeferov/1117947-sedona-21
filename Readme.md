@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Данияр Сеферов](https://up.htmlacademy.ru/adaptive/21/user/1117947).
-* Наставник: `Неизвестно`.
+* Наставник: Мурат Баркинхоев.
 
 ---
 
