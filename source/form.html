@@ -17,7 +17,7 @@
     <div class="main-nav__wrapper container">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>
+          <a href="index.html">
             Главная
           </a>
         </li>
@@ -27,7 +27,7 @@
           </a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">
+          <a class="active" href="form.html">
             Форма Отзыва
           </a>
         </li>
@@ -68,18 +68,15 @@
         <div class="review-form__user">
           <p>
             <label for="name">Имя*:</label>
-            <input class="review-form__input review-form__input--text" id="name" type="text" name="name"
-                   placeholder="Петр" required>
+            <input class="review-form__input review-form__input--text" id="name" type="text" name="name" placeholder="Петр" required>
           </p>
           <p>
             <label for="second-name">Фамилия*:</label>
-            <input class="review-form__input" id="second-name" type="text" name="second-name" placeholder="Иванов"
-                   required>
+            <input class="review-form__input" id="second-name" type="text" name="second-name" placeholder="Иванов" required>
           </p>
           <p>
             <label for="patronymic">Отчество:</label>
-            <input class="review-form__input review-form__input--text" id="patronymic" type="text" name="patronymic"
-                   placeholder="Александрович">
+            <input class="review-form__input review-form__input--text" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </p>
         </div>
       </fieldset>
@@ -89,13 +86,11 @@
         <div class="review-form__contacts">
           <p>
             <label for="phone">Контактный телефон*:</label>
-            <input class="review-form__input review-form__input--tel" id="phone" type="tel" name="phone"
-                   placeholder="Введите телефон" required>
+            <input class="review-form__input review-form__input--tel" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
           </p>
           <p>
             <label for="email">Электронная почта*:</label>
-            <input class="review-form__input review-form__input--email" id="email" type="email" name="email"
-                   placeholder="Введите e-mail" required>
+            <input class="review-form__input review-form__input--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
           </p>
         </div>
       </fieldset>
@@ -104,18 +99,15 @@
         <legend>Ваше общее впечатление:</legend>
         <ul class="review-form__impression">
           <li class="review-form__option review-form__radio">
-            <input class="visually-hidden review-form__input--radio review-form__input" type="radio"
-                   name="impression" value="positive" id="impression-positive" checked>
+            <input class="visually-hidden review-form__input--radio review-form__input" type="radio" name="impression" value="positive" id="impression-positive" checked>
             <label for="impression-positive">Скорее положительное</label>
           </li>
           <li class="review-form__option review-form__radio">
-            <input class="visually-hidden review-form__input--radio review-form__input" type="radio"
-                   name="impression" value="negative" id="impression-negative">
+            <input class="visually-hidden review-form__input--radio review-form__input" type="radio" name="impression" value="negative" id="impression-negative">
             <label for="impression-negative">Скорее отрицательное</label>
           </li>
           <li class="review-form__option review-form__radio">
-            <input class="visually-hidden review-form__input--radio review-form__input" type="radio"
-                   name="impression" value="not sure" id="impression-not-sure">
+            <input class="visually-hidden review-form__input--radio review-form__input" type="radio" name="impression" value="not sure" id="impression-not-sure">
             <label for="impression-not-sure">Затрудняюсь ответить</label>
           </li>
         </ul>
@@ -125,25 +117,19 @@
         <legend>Посещенные достопримечательности:</legend>
         <ul class="review-form__landmarks">
           <li class="review-form__option review-form__checkbox">
-            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox"
-                   name="landmarks-devils-bridge-trail" value="Devil's Bridge Trail" id="landmarks-devils-bridge-trail"
-                   checked>
+            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox" name="landmarks-devils-bridge-trail" value="Devil's Bridge Trail" id="landmarks-devils-bridge-trail" checked>
             <label for="landmarks-devils-bridge-trail">Мост Дьявола</label>
           </li>
           <li class="review-form__option review-form__checkbox">
-            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox"
-                   name="landmarks-bell-rock" value="Bell Rock" id="landmarks-bell-rock" checked>
+            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox" name="landmarks-bell-rock" value="Bell Rock" id="landmarks-bell-rock" checked>
             <label for="landmarks-bell-rock">Гора-Колокол</label>
           </li>
           <li class="review-form__option review-form__checkbox">
-            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox"
-                   name="landmarks-slide-rock-state-park" value="Slide Rock State Park"
-                   id="landmarks-slide-rock-state-park" checked>
+            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox" name="landmarks-slide-rock-state-park" value="Slide Rock State Park" id="landmarks-slide-rock-state-park" checked>
             <label for="landmarks-slide-rock-state-park">Слайд-парк</label>
           </li>
           <li class="review-form__option review-form__checkbox">
-            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox"
-                   name="landmarks-red-rocks" value="Red Rocks" id="landmarks-red-rocks">
+            <input class="visually-hidden review-form__input--checkbox review-form__input" type="checkbox" name="landmarks-red-rocks" value="Red Rocks" id="landmarks-red-rocks">
             <label for="landmarks-red-rocks">Красные скалы</label>
           </li>
         </ul>
