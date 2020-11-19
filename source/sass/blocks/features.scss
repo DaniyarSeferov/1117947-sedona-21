@@ -1,0 +1,22 @@
+.features {
+  &__list {
+    list-style: none;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    text-transform: uppercase;
+  }
+}
+
+.features--bg-grey {
+  background-color: $color-grey;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.hotel {
+  text-align: center;
+
+  &__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}

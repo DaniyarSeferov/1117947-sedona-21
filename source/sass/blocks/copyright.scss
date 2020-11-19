@@ -1,0 +1,23 @@
+.copyright {
+  text-align: center;
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+    color: $color-black;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    font-size: 0;
+
+    &:hover path,
+    &:focus path {
+      fill: $color-blue-light;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

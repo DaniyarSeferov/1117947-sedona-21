@@ -1,0 +1,43 @@
+.social {
+  &__list {
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__item {
+    width: 46px;
+    height: 48px;
+    vertical-align: middle;
+    background-color: $color-blue-light;
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+
+    &:hover,
+    &:focus {
+      background-color: $color-blue;
+    }
+
+    &:active {
+      background-color: $color-blue-dark;
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__link--tw {
+  background: url("../img/icons/twitter.svg") 50% 50% no-repeat;
+}
+
+.social__link--fb {
+  background: url("../img/icons/facebook.svg") 50% 50% no-repeat;
+}
+
+.social__link--yt {
+  background: url("../img/icons/twitter.svg") 50% 50% no-repeat;
+}

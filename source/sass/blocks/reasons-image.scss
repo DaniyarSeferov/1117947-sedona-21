@@ -1,0 +1,16 @@
+.reasons-image {
+  &__desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-white;
+    background-color: $color-blue-light;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+}

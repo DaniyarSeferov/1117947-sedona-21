@@ -1,0 +1,10 @@
+.quote {
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $color-black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
