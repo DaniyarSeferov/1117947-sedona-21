@@ -1,0 +1,15 @@
+.page-description {
+  text-align: center;
+  text-transform: uppercase;
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $color-black;
+  }
+
+  &__text {
+    line-height: 24px;
+  }
+}
