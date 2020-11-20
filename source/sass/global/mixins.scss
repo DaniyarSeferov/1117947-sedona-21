@@ -1,0 +1,4 @@
+@mixin outline($color) {
+  outline: 5px solid rgba($color, 0.8);
+  outline-offset: 5px;
+}
