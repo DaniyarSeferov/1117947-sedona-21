@@ -1,0 +1,46 @@
+.video {
+  text-align: center;
+
+  &__title {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__controls {
+    height: 22px;
+    padding: 22px 23px 22px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light;
+  }
+
+  &__icon {
+    display: block;
+    line-height: 0;
+
+    &:focus path,
+    &:hover path {
+      fill: $color-black-light;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+
+    &--replay {
+      margin-right: auto;
+    }
+
+    &--subtitles {
+      margin-right: 31px;
+    }
+  }
+}
