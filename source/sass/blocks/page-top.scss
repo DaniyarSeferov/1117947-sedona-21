@@ -1,4 +1,13 @@
 .page-top {
+  padding: 90px 0 85px;
   text-align: center;
   background-color: $color-blue-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 0 90px;
+  }
 }

@@ -1,34 +1,89 @@
 .site-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 
   a {
     display: block;
-    color: $color-black;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    color: $color-white;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 26px;
+      color: $color-black;
+    }
 
     &:hover,
     &:focus {
-      color: $color-blue-light;
+      @media (min-width: $tablet-width) {
+        color: $color-blue-light;
+      }
     }
 
     &:active {
-      color: $color-black;
       opacity: 0.3;
+
+      @media (min-width: $tablet-width) {
+        color: $color-black;
+      }
     }
 
     &.active {
-      color: $color-brown;
+      @media (min-width: $tablet-width) {
+        color: $color-brown;
+      }
 
       &:hover,
       &:focus {
-        color: $color-brown-dark;
+        @media (min-width: $tablet-width) {
+          color: $color-brown-dark;
+        }
       }
 
       &:active {
-        color: $color-brown;
-        opacity: 0.3;
+        @media (min-width: $tablet-width) {
+          color: $color-brown;
+          opacity: 0.3;
+        }
       }
+    }
+  }
+}
+
+.site-list__item {
+  background-color: $color-blue-light;
+
+  &--logo {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 102px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  &--active,
+  &:hover,
+  &:focus {
+    background-color: $color-blue;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
     }
   }
 }

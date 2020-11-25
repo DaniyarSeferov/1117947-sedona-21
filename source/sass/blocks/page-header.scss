@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: relative;
+  }
+
+  &__logo {
+    height: 56px;
+    width: 102px;
+    margin: 0 auto;
+    order: 2;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 51px);
+    }
+  }
+}
