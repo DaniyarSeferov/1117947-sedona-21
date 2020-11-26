@@ -1,8 +1,15 @@
 .main-nav {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+
   &__toggle {
     position: absolute;
     top: 17px;
     right: 16px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
 
     @media (min-width: $tablet-width) {
       display: none;
