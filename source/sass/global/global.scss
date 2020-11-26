@@ -40,3 +40,9 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+.desktop-hide {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
