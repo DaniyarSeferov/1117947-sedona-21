@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page-body">
 <header class="page-header">
@@ -11,14 +12,14 @@
     <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
   </a>
 
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <div class="main-nav__wrapper container">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a class="active" href="index.html">
+          <a class="active">
             Главная
           </a>
         </li>
@@ -26,6 +27,9 @@
           <a href="catalog.html">
             Фото и видео
           </a>
+        </li>
+        <li class="site-list__item site-list__item--logo">
+
         </li>
         <li class="site-list__item">
           <a href="form.html">
@@ -79,7 +83,11 @@
         <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
       </div>
       <div class="reasons-image__image">
-        <img src="img/photo-city@1x.jpg" width="320" height="260" alt="Седона">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-city@1x-800w.jpg">
+          <source media="(min-width:768px)" srcset="img/photo-city@1x-512w.jpg">
+          <img src="img/photo-city@1x.jpg" width="320" height="260" alt="Седона">
+        </picture>
       </div>
     </section>
 
@@ -113,7 +121,11 @@
         <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
       </div>
       <div class="reasons-image__image">
-        <img src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост дьявола">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/photo-bridge@1x-800w.jpg">
+          <source media="(min-width:768px)" srcset="img/photo-bridge@1x-512w.jpg">
+          <img src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост дьявола">
+        </picture>
       </div>
     </section>
 
@@ -159,7 +171,11 @@
 
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
-    <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+    <picture>
+      <source media="(min-width:1200px)" srcset="img/map-desktop.jpg">
+      <source media="(min-width:768px)" srcset="img/map-tablet.jpg">
+      <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
+    </picture>
   </section>
 </main>
 
@@ -168,8 +184,8 @@
     <div class="page-footer__hashtag">
       <p>#visitsedona</p>
     </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
+    <div class="page-footer__social">
+      <ul class="page-footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--tw" href="blank.html">Твиттер</a>
         </li>

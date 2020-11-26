@@ -1,14 +1,19 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   &__text {
     font-size: 14px;
     line-height: 26px;
+    padding-right: 12px;
     color: $color-black;
     text-transform: uppercase;
   }
 
   &__link {
+    height: 35px;
     font-size: 0;
 
     &:hover path,

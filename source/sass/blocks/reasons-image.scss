@@ -1,4 +1,17 @@
 .reasons-image {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &--desc-right {
+      grid-template-columns: 2fr 1fr;
+
+      .reasons-image__desc {
+        order: 2;
+      }
+    }
+  }
+
   &__desc {
     font-size: 14px;
     line-height: 21px;
@@ -12,5 +25,11 @@
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
   }
 }

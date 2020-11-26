@@ -1,4 +1,13 @@
 .page-footer {
+  &__wrapper {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+    }
+  }
+
   &__hashtag {
     font-size: 21px;
     line-height: 26px;
@@ -6,5 +15,17 @@
     color: $color-black;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__social {
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-list {
+    margin: 0 auto;
   }
 }
