@@ -20,6 +20,11 @@
     justify-content: center;
     align-items: center;
     background-color: $color-grey-light;
+
+    @media (min-width: $desktop-width) {
+      max-width: 800px;
+      margin: 0 auto;
+    }
   }
 
   &__icon {
