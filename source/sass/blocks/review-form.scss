@@ -1,11 +1,46 @@
 .review-form {
-  fieldset {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "impression name"
+      "contacts contacts"
+      "landmarks landmarks"
+      "emotions emotions"
+      "button obligatory";
+  }
+
+  &__item {
     padding: 0;
     margin: 0 0 43px 0;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      &--name {
+        grid-area: name;
+      }
+
+      &--impression {
+        grid-area: impression;
+      }
+
+      &--contacts {
+        grid-area: contacts;
+      }
+
+      &--landmarks {
+        grid-area: landmarks;
+      }
+
+      &--emotions {
+        grid-area: emotions;
+      }
+    }
   }
 
   legend {
+    margin-bottom: 20px;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
@@ -22,9 +57,18 @@
   }
 
   &__contacts {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     label {
       display: block;
       margin-left: 21px;
+
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -57,11 +101,21 @@
     &--email {
       width: calc(100% - 106px);
       padding-right: 80px;
+
+      @media (min-width: $desktop-width) {
+        width: auto;
+      }
     }
   }
 
   &__icon {
     position: relative;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
 
     &::after {
       content: "";
@@ -119,7 +173,7 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: -13px;
       width: 48px;
       height: 48px;
       background-color: $color-grey-light;
@@ -127,16 +181,31 @@
       border-radius: 50%;
     }
 
+    & + label:hover::before,
+    & + label:focus::before {
+      background-color: $color-grey-dark-2;
+      border-color: $color-grey-dark-2;
+    }
+
+    & + label:active::before {
+      background-color: $color-grey-dark-3;
+      border-color: $color-grey-dark-3;
+    }
+
     &:checked + label::after {
       content: "";
       position: absolute;
-      top: 16px;
-      left: 16px;
+      top: 4px;
+      left: 17px;
       width: 18px;
       height: 18px;
       background-color: $color-black-light;
       border: 3px solid $color-black-light;
       border-radius: 50%;
+    }
+
+    &:checked + label:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -145,6 +214,22 @@
     margin: 0;
     list-style: none;
     line-height: 26px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 5px;
+      row-gap: 5px;
+      width: 460px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   &__input--checkbox {
@@ -152,7 +237,7 @@
       content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: -13px;
       width: 46px;
       height: 46px;
       background-color: $color-grey-light;
@@ -160,14 +245,29 @@
       border-radius: 4px;
     }
 
+    & + label:hover::before,
+    & + label:focus::before {
+      background-color: $color-grey-dark-2;
+      border-color: $color-grey-dark-2;
+    }
+
+    & + label:active::before {
+      background-color: $color-grey-dark-3;
+      border-color: $color-grey-dark-3;
+    }
+
     &:checked + label::after {
       content: "";
       position: absolute;
-      top: 0;
+      top: -13px;
       left: 0;
       width: 56px;
       height: 56px;
       background: url("../img/icons/tick.svg") 50% 50% no-repeat;
+    }
+
+    &:checked + label:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -198,8 +298,38 @@
     }
   }
 
-  .filter-button {
+  &__button {
     border: none;
+    width: 100%;
+    padding: 16px;
     cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      grid-area: button;
+    }
+  }
+
+  &__obligatory {
+    display: none;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: right;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      grid-area: obligatory;
+    }
+  }
+
+  &__user {
+    p {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      width: 100%;
+    }
   }
 }

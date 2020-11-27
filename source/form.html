@@ -11,13 +11,13 @@
     <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
   </a>
 
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <div class="main-nav__wrapper container">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a href="index.html">
             Главная
           </a>
@@ -27,8 +27,11 @@
             Фото и видео
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="active" href="form.html">
+        <li class="site-list__item site-list__item--logo">
+
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="active">
             Форма Отзыва
           </a>
         </li>
@@ -67,7 +70,7 @@
       <h2 class="visually-hidden">Форма отзыва</h2>
 
       <form class="review__form review-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--name">
           <legend>Представьтесь:</legend>
           <div class="review-form__user">
             <p>
@@ -85,11 +88,11 @@
           </div>
         </fieldset>
 
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--contacts">
           <legend>Контактная информация:</legend>
           <div class="review-form__contacts">
             <p class="review-form__icon icon-phone">
-              <label for="phone">Контактный телефон*:</label>
+              <label for="phone"><span class="desktop-hide">Контактный</span> телефон*:</label>
               <input class="review-form__input review-form__input--tel" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
             </p>
             <p class="review-form__icon icon-mail">
@@ -99,7 +102,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--impression">
           <legend>Ваше общее впечатление:</legend>
           <ul class="review-form__impression">
             <li class="review-form__option review-form__radio">
@@ -117,7 +120,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--landmarks">
           <legend>Посещенные достопримечательности:</legend>
           <ul class="review-form__landmarks">
             <li class="review-form__option review-form__checkbox">
@@ -139,7 +142,7 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review-form__item">
+        <fieldset class="review-form__item review-form__item--emotions">
           <legend>Опишите свои эмоции:</legend>
           <div class="review-form__emotions">
             <p>
@@ -149,7 +152,8 @@
           </div>
         </fieldset>
 
-        <button type="submit" class="filter-button button">Отправить отзыв</button>
+        <button type="submit" class="review-form__button button">Отправить отзыв</button>
+        <p class="review-form__obligatory">* — обязательные поля</p>
       </form>
     </div>
   </section>
@@ -160,8 +164,8 @@
     <div class="page-footer__hashtag">
       <p>#visitsedona</p>
     </div>
-    <div class="page-footer__social social">
-      <ul class="social__list">
+    <div class="page-footer__social">
+      <ul class="page-footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--tw" href="blank.html">Твиттер</a>
         </li>
