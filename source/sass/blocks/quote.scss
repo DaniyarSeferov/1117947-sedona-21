@@ -2,9 +2,19 @@
   &__text {
     font-size: 18px;
     line-height: 26px;
+    margin: 33px 0 32px;
     font-weight: bold;
     color: $color-black;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-top: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 56px;
+    }
   }
 }
