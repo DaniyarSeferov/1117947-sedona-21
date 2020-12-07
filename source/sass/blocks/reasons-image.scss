@@ -13,14 +13,6 @@
   }
 
   &__desc {
-    padding: 37px 14px 25px;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-white;
-    background-color: $color-blue-light;
-    text-transform: uppercase;
-    text-align: center;
-
     @media (min-width: $tablet-width) {
       padding: 33px 32px 20px;
     }
@@ -58,18 +50,6 @@
 }
 
 .reasons-image--desc-right {
-  @media (max-width: $mobile-width-only) {
-    .reasons-image__desc {
-      padding-top: 22px;
-      padding-bottom: 20px;
-    }
-
-    .reasons-image__title {
-      margin-top: 18px;
-      margin-bottom: 12px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 22px;
   }
