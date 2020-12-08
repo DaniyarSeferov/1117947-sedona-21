@@ -1,31 +1,64 @@
 .page-footer {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 90px;
+    padding: 9px 0 21px;
+  }
+
   &__wrapper {
     @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
     }
   }
 
   &__hashtag {
+    margin: 12px 0 32px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: $color-black;
     text-transform: uppercase;
     text-align: center;
+
+    p {
+      margin: 0;
+
+      @media (min-width: $tablet-width) {
+        padding: 4px 0 0 2px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-right: 25px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 33%;
+      margin: 0;
+    }
   }
 
   &__social {
     margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
+      width: 33%;
       margin-bottom: 0;
     }
   }
 
   &__social-list {
     margin: 0 auto;
+  }
+
+  &__copyright {
+    @media (min-width: $tablet-width) {
+      width: 33%;
+    }
   }
 }

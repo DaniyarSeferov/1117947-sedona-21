@@ -1,0 +1,66 @@
+.reasons-desc {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 216px;
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-top: 22px;
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 28px;
+    }
+  }
+
+  &__number {
+    margin: 10px 0 17px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.reasons-desc--real-town {
+  @media (max-width: $mobile-width-only) {
+    padding: 50px 15px 26px;
+  }
+}
+
+.reasons-desc--bg-grey {
+  padding: 13px 20px;
+  min-height: 141px;
+  color: $color-black-light;
+  background-color: $color-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 20px;
+    min-height: 216px;
+  }
+
+  .reasons-desc__title {
+    margin-top: 10px;
+    color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 18px;
+    }
+  }
+}

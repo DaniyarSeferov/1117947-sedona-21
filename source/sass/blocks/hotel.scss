@@ -1,16 +1,53 @@
 .hotel {
+  min-height: 247px;
+  padding: 20px;
   text-align: center;
 
+  &__wraper {
+    padding: 0;
+  }
+
   &__title {
+    margin-top: 12px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: $color-black;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-top: 33px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 31px;
+    }
   }
 
   &__desc {
+    margin-bottom: 26px;
     line-height: 24px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 43px;
+    }
+  }
+
+  &__button {
+    @media (min-width: $tablet-width) {
+      width: 426px;
+      margin-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 46px;
+    }
   }
 }

@@ -12,11 +12,11 @@
     <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
   </a>
 
-  <nav class="main-nav main-nav--opened">
+  <nav class="main-nav main-nav--opened main-nav--nojs">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <div class="main-nav__wrapper container">
+    <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a class="active">
@@ -64,7 +64,7 @@
         Цитата
       </h2>
       <p class="quote__text">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
+        Седона — небольшой<br class="hide--tablet"> городок в Аризоне,<br> заслуживающий большего!
       </p>
     </div>
   </section>
@@ -77,10 +77,10 @@
     </div>
 
     <section class="reasons-image">
-      <div class="reasons-image__desc">
-        <h3 class="reasons-image__title">Настоящий городок</h3>
-        <p>— №1 —</p>
-        <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="reasons-image__desc reasons-desc reasons-desc--real-town">
+        <h3 class="reasons-desc__title">Настоящий<br class="hide--mobile"> городок</h3>
+        <p class="reasons-desc__number">— №1 —</p>
+        <p>Седона не аттракцион для туристов,<br class="hide--mobile hide--tablet-only"> там течет своя жизнь</p>
       </div>
       <div class="reasons-image__image">
         <picture>
@@ -96,29 +96,29 @@
         <li class="features__item features__item--features">
           <h3 class="features__title">Жилье</h3>
           <p class="features__desc">
-            Рекомендуем пожить в настоящем мотеле, все как в кино!
+            Рекомендуем пожить в настоящем<br class="hide--mobile hide--tablet-only"> мотеле, все<br class="hide--mobile hide--desktop"> как в кино!
           </p>
         </li>
         <li class="features__item features__item--gift">
           <h3 class="features__title">Сувениры</h3>
           <p class="features__desc">
-            Не только китайского, но и местного производства!
+            Не только китайского,<br class="hide--mobile hide--tablet-only"> но<br class="hide--mobile hide--desktop"> и местного производства!
           </p>
         </li>
         <li class="features__item features__item--food">
           <h3 class="features__title">Еда</h3>
           <p class="features__desc">
-            Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            Всегда заказывайте фирменный бургер,<br class="hide--mobile"> вы не разочаруетесь!
           </p>
         </li>
       </ul>
     </section>
 
     <section class="reasons-image reasons-image--desc-right">
-      <div class="reasons-image__desc">
-        <h3 class="reasons-image__title">Там есть мост дьявола</h3>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      <div class="reasons-image__desc reasons-desc">
+        <h3 class="reasons-desc__title">Там есть<br class="hide--mobile"> мост дьявола</h3>
+        <p class="reasons-desc__number">— №2 —</p>
+        <p>Да, по нему можно<br class="hide--mobile hide--desktop"> пройти!<br class="hide--mobile hide--tablet-only"> Если вы<br class="hide--mobile hide--desktop"> осмелитесь, конечно</p>
       </div>
       <div class="reasons-image__image">
         <picture>
@@ -129,27 +129,27 @@
       </div>
     </section>
 
-    <section class="features features--bg-grey">
-      <ul class="features__list">
-        <li class="features__item features__item--square">
-          <h3 class="features__title">Небольшая площадь</h3>
-          <p>— №3 —</p>
-          <p class="features__desc">
-            Все интересные места находятся очень близко
+    <section class="reasons-list">
+      <ul class="reasons-list__list">
+        <li class="reasons-list__item reasons-desc reasons-desc--bg-grey">
+          <h3 class="reasons-desc__title">Небольшая<br class="hide--mobile"> площадь</h3>
+          <p class="reasons-desc__number">— №3 —</p>
+          <p>
+            Все интересные места находятся<br class="hide--tablet"> очень близко
           </p>
         </li>
-        <li class="features__item features__item--road">
-          <h3 class="features__title">Красивая дорога</h3>
-          <p>— №4 —</p>
-          <p class="features__desc">
-            Ехать в Седону из Лас-Вегаса совсем не скучно!
+        <li class="reasons-list__item reasons-desc reasons-desc--bg-grey">
+          <h3 class="reasons-desc__title">Красивая<br class="hide--mobile"> дорога</h3>
+          <p class="reasons-desc__number">— №4 —</p>
+          <p>
+            Ехать в Седону из<br class="hide--mobile hide--desktop"> Лас-Вегаса<br class="hide--tablet"> совсем<br class="hide--mobile"> не скучно!
           </p>
         </li>
-        <li class="features__item features__item--tourists">
-          <h3 class="features__title">Мало туристов</h3>
-          <p>— №5 —</p>
-          <p class="features__desc">
-            Большинство едет в гранд каньон и толпится там
+        <li class="reasons-list__item reasons-desc reasons-desc--bg-grey">
+          <h3 class="reasons-desc__title">Мало<br class="hide--mobile"> туристов</h3>
+          <p class="reasons-desc__number">— №5 —</p>
+          <p>
+            Большинство едет в<br class="hide--mobile hide--desktop"> гранд каньон<br class="hide--tablet"> и<br class="hide--mobile"> толпится там
           </p>
         </li>
       </ul>
@@ -163,9 +163,9 @@
         Заинтересовались?
       </p>
       <p class="hotel__desc">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        Укажите предполагаемые даты поездки,<br class="hide--mobile"> и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a href="#" class="button">Найти гостиницу</a>
+      <a href="#" class="hotel__button button">Найти гостиницу</a>
     </div>
   </section>
 
@@ -180,7 +180,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper container">
+  <div class="page-footer__wrapper">
     <div class="page-footer__hashtag">
       <p>#visitsedona</p>
     </div>
@@ -208,5 +208,6 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
