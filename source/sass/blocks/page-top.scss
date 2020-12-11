@@ -24,7 +24,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     height: 57px;
     width: 100%;
@@ -32,6 +32,40 @@
 
     @media (min-width: $desktop-width) {
       bottom: -1px;
+    }
+  }
+}
+
+.page-top--small {
+  min-height: 72px;
+  padding: 28px 0 57px;
+  background-image: url("../img/back-desktop-mobile.jpg");
+  background-position: 50% 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 202px;
+    padding-top: 30px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 198px;
+    padding-top: 45px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+
+  .page-top__img {
+    margin-top: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 65px;
+      width: 457px;
+      height: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 57px;
+      width: 460px;
     }
   }
 }

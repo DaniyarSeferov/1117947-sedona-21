@@ -1,4 +1,6 @@
 .review {
+  margin-bottom: 46px;
+
   &__wrapper {
     @media (min-width: $tablet-width) {
       max-width: 648px;
