@@ -1,25 +1,60 @@
 .video {
+  margin-bottom: 27px;
+  padding: 20px 0;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+  }
+
   &__title {
+    margin: 13px 0 28px;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
   }
 
   &__desc {
+    margin-bottom: 33px;
     line-height: 24px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 78px;
+    }
   }
 
   &__controls {
+    position: relative;
     height: 22px;
+    margin: 0 20px;
     padding: 22px 23px 22px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-grey-light;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 49px;
+      width: calc(100% - 76px);
+      margin: 0;
+      padding-left: 35px;
+      padding-right: 42px;
+      background-color: $color-black-special-4;
+    }
 
     @media (min-width: $desktop-width) {
       max-width: 800px;
@@ -31,9 +66,19 @@
     display: block;
     line-height: 0;
 
+    @media (min-width: $tablet-width) {
+      path {
+        fill: $color-white;
+      }
+    }
+
     &:focus path,
     &:hover path {
       fill: $color-black-light;
+
+      @media (min-width: $tablet-width) {
+        fill: $color-white-special-2;
+      }
     }
 
     &:active path {
@@ -42,10 +87,75 @@
 
     &--replay {
       margin-right: auto;
+
+      @media (min-width: $tablet-width) {
+        margin-right: 20px;
+      }
     }
 
     &--subtitles {
       margin-right: 31px;
+    }
+  }
+
+  &__player.container {
+    @media (max-width: $mobile-width-only) {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &__poster {
+    display: block;
+    width: calc(100% + 40px);
+  }
+
+
+  &__range-control {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    height: 24px;
+    width: calc(100% - 46px);
+    padding-top: 21px;
+    padding-right: 23px;
+    padding-left: 23px;
+    background-color: $color-black-special-4;
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      margin-right: 20px;
+      padding-top: 22px;
+      background-color: transparent;
+    }
+  }
+
+  &__scale {
+    height: 3px;
+    background: $color-white;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    background-color: $color-white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      left: 134px;
     }
   }
 }

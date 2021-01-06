@@ -5,5 +5,9 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
+
+    @media (min-width: $desktop-width) {
+      box-shadow: 0 5px 15px $color-black-special;
+    }
   }
 }

@@ -36,3 +36,21 @@
     line-height: 24px;
   }
 }
+
+.page-description--photo {
+  padding: 16px 0 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 0 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 68px;
+  }
+
+  .page-description__title {
+    @media (min-width: $desktop-width) {
+      margin-top: 84px;
+    }
+  }
+}

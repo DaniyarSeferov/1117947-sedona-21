@@ -25,6 +25,10 @@
     text-transform: uppercase;
     text-align: center;
 
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+
     p {
       margin: 0;
 
