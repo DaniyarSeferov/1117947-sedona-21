@@ -1,5 +1,6 @@
 .likes {
   position: relative;
+  padding-left: 37px;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
@@ -11,6 +12,17 @@
     path {
       fill: $color-white;
       opacity: 1;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: -2px;
+      left: 5px;
     }
   }
 }

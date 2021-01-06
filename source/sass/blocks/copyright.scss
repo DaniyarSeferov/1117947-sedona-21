@@ -4,6 +4,10 @@
   align-items: center;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
   &__text {
     font-size: 14px;
     line-height: 26px;
@@ -23,6 +27,10 @@
   &__link {
     height: 35px;
     font-size: 0;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
 
     &:hover path,
     &:focus path {
