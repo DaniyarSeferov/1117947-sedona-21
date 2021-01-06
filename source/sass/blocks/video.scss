@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
     padding-top: 50px;
   }
 
@@ -59,6 +60,9 @@
     @media (min-width: $desktop-width) {
       max-width: 800px;
       margin: 0 auto;
+      padding-bottom: 25px;
+      height: 47px;
+      width: calc(100% - 77px);
     }
   }
 
@@ -106,6 +110,11 @@
 
     @media (min-width: $tablet-width) {
       position: relative;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 800px;
+      margin: 0 auto;
     }
   }
 

@@ -28,6 +28,10 @@
     height: 35px;
     font-size: 0;
 
+    @media (min-width: $desktop-width) {
+      margin-right: 60px;
+    }
+
     &:hover path,
     &:focus path {
       fill: $color-blue-light;
