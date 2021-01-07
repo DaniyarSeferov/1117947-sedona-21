@@ -48,19 +48,17 @@
 .page-top--small {
   min-height: 72px;
   padding: 28px 0 57px;
-  background-image: url("../img/back-desktop-mobile.jpg");
   background-position: 50% 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 202px;
     padding-top: 30px;
-    background-image: url("../img/back-desktop.jpg");
+    background-size: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 198px;
     padding-top: 45px;
-    background-image: url("../img/back-desktop.jpg");
   }
 
   .page-top__img {
