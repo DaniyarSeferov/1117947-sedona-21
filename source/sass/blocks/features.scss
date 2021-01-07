@@ -7,7 +7,7 @@
 
   &__list {
     list-style: none;
-    margin: 0 0 15px;
+    margin: 7px 0 15px;
     padding: 0;
 
     @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
     text-transform: uppercase;
 
     @media (min-width: $tablet-width) {
-      margin-top: 138px;
+      margin-top: 144px;
       margin-bottom: 22px;
       font-size: 21px;
     }
@@ -69,7 +69,7 @@
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        top: 52px;
+        top: 58px;
         left: calc(50% - 38px);
         width: 76px;
         height: 75px;
@@ -119,7 +119,7 @@
         background-image: url("../img/icons/icon-burger.svg");
 
         @media (min-width: $tablet-width) {
-          top: 54px;
+          top: 59px;
           left: calc(50% - 38px);
           background-size: 76px 68px;
         }

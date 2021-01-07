@@ -1,5 +1,5 @@
 .reasons-desc {
-  padding: 20px;
+  padding: 20px 20px 21px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -9,6 +9,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 216px;
+    padding-bottom: 20px;
   }
 
   &__title {
@@ -40,13 +41,12 @@
 
 .reasons-desc--real-town {
   @media (max-width: $mobile-width-only) {
-    padding: 50px 15px 26px;
+    padding: 50px 15px 27px;
   }
 }
 
 .reasons-desc--bg-grey {
-  padding: 13px 20px;
-  min-height: 141px;
+  padding: 17px 20px 12px;
   color: $color-black-light;
   background-color: $color-grey;
 
@@ -60,7 +60,19 @@
     color: $color-black;
 
     @media (min-width: $tablet-width) {
-      margin-top: 18px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.reasons-image--desc-right {
+  .reasons-desc__title {
+    @media (min-width: $tablet-width) {
+      margin-top: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 32px;
     }
   }
 }
