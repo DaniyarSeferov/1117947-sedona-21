@@ -19,7 +19,12 @@
   }
 
   &__image {
+    picture {
+      display: block;
+    }
+
     img {
+      display: block;
       width: 100%;
     }
   }
@@ -52,5 +57,9 @@
 .reasons-image--desc-right {
   @media (min-width: $tablet-width) {
     margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
   }
 }

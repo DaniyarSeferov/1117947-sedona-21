@@ -8,7 +8,7 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 51px;
+      margin-bottom: 52px;
     }
 
     @media (min-width: $desktop-width) {
@@ -61,8 +61,35 @@
   }
 
   &__item {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       width: 28%;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: calc(100% - 40px);
+        bottom: 0;
+        left: 20px;
+        border-bottom: 1px solid $color-grey-dark-4;
+      }
+
+      &:first-child {
+        padding-top: 17px;
+        padding-bottom: 10px;
+      }
+
+      &:last-child {
+        padding-bottom: 10px;
+
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
