@@ -9,7 +9,11 @@
 <body class="page-body inner-page">
 <header class="page-header">
   <a class="page-header__logo">
-    <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+    </picture>
   </a>
 
   <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -52,7 +56,10 @@
       <h2 class="visually-hidden">
         Седона
       </h2>
-      <img class="page-top__img" src="img/sedona.svg" width="229" height="39" alt="Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+        <img class="page-top__img" src="img/sedona.svg" width="229" height="39" alt="Седона">
+      </picture>
     </div>
   </section>
 
@@ -161,7 +168,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__wrapper container">
     <div class="page-footer__hashtag">
       <p>#visitsedona</p>
     </div>

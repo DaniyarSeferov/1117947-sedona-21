@@ -22,9 +22,20 @@
       left: calc(50% - 51px);
     }
 
+    @media (min-width: $desktop-width) {
+      width: 187px;
+      height: 97px;
+      left: calc(50% - 93px);
+    }
+
     img {
       width: 102px;
       height: 84px;
+
+      @media (min-width: $desktop-width) {
+        width: 187px;
+        height: 97px;
+      }
     }
   }
 }
