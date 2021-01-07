@@ -9,7 +9,11 @@
 <body class="page-body inner-page">
 <header class="page-header">
   <a class="page-header__logo">
-    <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+    </picture>
   </a>
 
   <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -52,7 +56,10 @@
       <h2 class="visually-hidden">
         Седона
       </h2>
-      <img class="page-top__img" src="img/sedona.svg" width="229" height="39" alt="Седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+        <img class="page-top__img" src="img/sedona.svg" width="229" height="39" alt="Седона">
+      </picture>
     </div>
   </section>
 
@@ -71,7 +78,13 @@
       <h2 class="visually-hidden">Фото</h2>
       <ul class="photo__list">
         <li class="photo__item photo__item--wide">
-          <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Дорога">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога">
+          </picture>
+
           <div class="photo__desc">
             <div class="photo__text">
               <h3 class="photo__title">Неродные просторы</h3>
@@ -86,7 +99,13 @@
           </div>
         </li>
         <li class="photo__item">
-          <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Растительность">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Растительность">
+          </picture>
+
           <div class="photo__desc">
             <div class="photo__text">
               <h3 class="photo__title">Местная растительность</h3>
@@ -101,7 +120,13 @@
           </div>
         </li>
         <li class="photo__item">
-          <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога">
+          </picture>
+
           <div class="photo__desc photo__desc--road">
             <div class="photo__text">
               <h3 class="photo__title">Дорога на север</h3>
@@ -116,7 +141,13 @@
           </div>
         </li>
         <li class="photo__item">
-          <img src="img/photo-4-desktop.jpg" width="280" height="280" alt="Мост дьявола">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+          </picture>
+
           <div class="photo__desc">
             <div class="photo__text">
               <h3 class="photo__title">Мост дьявола</h3>
@@ -148,10 +179,11 @@
 
       <!-- Здесь будет видео -->
       <div class="video__player container">
+
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
-          <img class="video__poster" src="img/video-mobile.jpg" alt="Sedona">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video__poster" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Sedona">
         </picture>
 
         <div class="video__controls">

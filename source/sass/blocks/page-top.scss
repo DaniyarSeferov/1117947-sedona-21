@@ -3,13 +3,22 @@
   padding: 90px 0 80px;
   text-align: center;
   background-color: $color-blue-light;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 77px 0 85px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
 
     &__img {
       width: 461px;
@@ -24,13 +33,13 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
     height: 57px;
     width: 100%;
     background: url("../img/intro-triangle.svg") no-repeat 50% 100%;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       bottom: -1px;
     }
   }
@@ -39,19 +48,17 @@
 .page-top--small {
   min-height: 72px;
   padding: 28px 0 57px;
-  background-image: url("../img/back-desktop-mobile.jpg");
   background-position: 50% 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 202px;
     padding-top: 30px;
-    background-image: url("../img/back-desktop.jpg");
+    background-size: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 198px;
     padding-top: 45px;
-    background-image: url("../img/back-desktop.jpg");
   }
 
   .page-top__img {
