@@ -83,7 +83,7 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      padding: 10px 29px 15px 20px;
+      padding: 10px 21px 15px 20px;
       background-color: $color-grey-light;
     }
 
@@ -93,12 +93,6 @@
       left: 0;
       right: 0;
       background-color: $color-black-special-3;
-    }
-
-    &--road {
-      @media (min-width: $desktop-width) {
-        padding-right: 38px;
-      }
     }
   }
 
