@@ -1,0 +1,34 @@
+.logo {
+  width: 187px;
+  height: 97px;
+
+  &__background {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &__sky {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &__mobile-border {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__desktop-border {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
