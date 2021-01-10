@@ -10,8 +10,8 @@
 
   &__logo {
     position: relative;
+    width: 187px;
     height: 56px;
-    width: 102px;
     margin: 0 auto;
     order: 2;
     z-index: 2;
@@ -19,7 +19,7 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       top: 0;
-      left: calc(50% - 51px);
+      left: calc(50% - 94px);
     }
 
     @media (min-width: $desktop-width) {

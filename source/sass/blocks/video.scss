@@ -70,25 +70,6 @@
     display: block;
     line-height: 0;
 
-    @media (min-width: $tablet-width) {
-      path {
-        fill: $color-white;
-      }
-    }
-
-    &:focus path,
-    &:hover path {
-      fill: $color-black-light;
-
-      @media (min-width: $tablet-width) {
-        fill: $color-white-special-2;
-      }
-    }
-
-    &:active path {
-      opacity: 0.3;
-    }
-
     &--replay {
       margin-right: auto;
 
@@ -99,6 +80,49 @@
 
     &--subtitles {
       margin-right: 31px;
+    }
+
+    .replay__icon {
+      fill: $color-grey-special;
+
+      @media (min-width: $tablet-width) {
+        fill: $color-white;
+      }
+    }
+
+    .subtitles__icon {
+      fill: $color-grey-special;
+
+      @media (min-width: $tablet-width) {
+        fill: $color-white;
+      }
+    }
+
+    .fullscreen__icon {
+      fill: $color-grey-special;
+
+      @media (min-width: $tablet-width) {
+        fill: $color-white;
+      }
+    }
+
+    &:focus .replay__icon,
+    &:hover .replay__icon,
+    &:focus .subtitles__icon,
+    &:hover .subtitles__icon,
+    &:focus .fullscreen__icon,
+    &:hover .fullscreen__icon {
+      fill: $color-black-light;
+
+      @media (min-width: $tablet-width) {
+        fill: $color-white-special-2;
+      }
+    }
+
+    &:active .replay__icon,
+    &:active .subtitles__icon,
+    &:active .repfullscreen__iconlay__icon {
+      opacity: 0.3;
     }
   }
 

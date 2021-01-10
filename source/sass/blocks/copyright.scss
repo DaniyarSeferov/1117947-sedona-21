@@ -32,12 +32,12 @@
       margin-right: 60px;
     }
 
-    &:hover path,
-    &:focus path {
+    &:hover .copyright__academy-icon,
+    &:focus .copyright__academy-icon {
       fill: $color-blue-light;
     }
 
-    &:active {
+    &:active .copyright__academy-icon {
       opacity: 0.3;
     }
   }
